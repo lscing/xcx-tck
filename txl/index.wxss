@@ -1,0 +1,248 @@
+/* pages/txl/index.wxss */
+.clean{ clear:both; width:0px; height:0px; line-height:0px; overflow:hidden;}
+input {
+  height: 88rpx;
+  line-height: 60rpx;
+  border: 0px;
+  padding-left: 10rpx;
+  border-radius: 5rpx;
+}
+
+/**
+ * 搜索框
+ */
+.wxSearch-section{
+  background-color: #f2f2f2;
+  padding: 5px 10px 5px 0;
+  border: 1px #eee solid;
+  
+}
+.wxSearch-pancel{
+  display: flex;
+  flex-direction: row;
+}
+.sss{
+  width: 18rpx;
+  height: 18rpx;
+  position: relative;
+  top: 18rpx;
+  left: 33rpx;
+}
+.wxSearch-input{
+  font-size:30rpx;
+  height:60rpx;
+  line-height:60rpx;
+  flex: 1; 
+  background-color: #fff;
+  padding: 5rpx 10rpx 5rpx 60rpx;
+}
+.wxSearch-button{
+  font-size:34rpx;
+  flex: 1;
+  line-height: 40rpx;
+  border: none !important;
+  color: #28c2b5 !important;
+  padding-top:20rpx;
+
+}
+
+.groups-null{
+  margin-top:15px;
+  text-align: center;
+}
+
+page {
+  background-color: #fff;
+   display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/*允许子元素伸展（1倍）*/
+
+.flex {
+    -moz-flex-grow: 1;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+}
+/*伸缩盒子模型*/
+.box {
+    display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    font-size:40rpx;
+}
+/*从上至下*/
+
+.box-tb {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+/*从左至右*/
+
+.box-lr {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -moz-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+/*交叉轴居中对齐*/
+
+.box-align-center {
+    -webkit-box-align: center;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+/*主轴居中*/
+
+.box-pack-center {
+    -webkit-box-pack: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.nav {
+  position: fixed;
+  right: 10rpx;
+  top: 8%;
+  height: 88%;
+  width: 50rpx;
+  font-family: Arial, Helvetica, sans-serif
+}
+.letter {
+  width: 50rpx;
+  height: 30rpx;
+  font-size: 22rpx;
+}
+.letter-text {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-radius: 50%;
+}
+.letter-actived {
+  background-color: #ccc;
+}
+.groups {
+  /*height: 100%;*/
+}
+.group-name-top{
+padding: 0rpx 50rpx 0 0rpx;
+background-color:#fff;
+}
+.group-name {
+  background-color:#fff;
+  padding: 22rpx 50rpx;
+  height: 29rpx;
+  line-height: 29rpx;
+  font-size:30rpx;
+  border-bottom: 1px solid #eee;
+}
+.group-users {
+  background-color: #fff;
+}
+.user-avatar {
+  width: 10rpx;
+}
+.user-avatar-img {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+}
+.user-name {
+  border-top:1px solid #eee;
+  color: #000000;
+  font-size: 36rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  display: flex;
+  align-items: center; 
+  position: relative;
+}
+.user-name:nth-child(1){
+  border-top: none
+}
+
+/*通讯录内容*/
+.txl-cont0{
+  background-color: #f7f7f7;
+}
+/* .txl-cont{
+  margin-top: 20rpx;
+} */
+.group-name-foot{
+  background-color: #f7f7f7;
+  height: 20rpx;
+  width: 100%;
+}
+.group-name-foot0{
+  padding:0rpx 50rpx 0 0rpx;
+  background-color:#fff;
+}
+.txl-cont:nth-child(1){
+   margin-top: 0rpx;
+}
+.user-name-top{
+  padding: 0rpx 50rpx 0 50rpx;
+  flex-grow:1;
+
+}
+.img-logo{
+  
+  float: left;
+  
+  display: flex;
+  align-content: center;
+}
+.img-logo image{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%
+}
+.txl-cont2{
+  flex: 1;
+  float: left;
+  padding-top: 10rpx;
+  margin-left: 10rpx;
+}
+.txl-cont3{
+  font-size: 30rpx;
+  display: block;line-height: 40rpx;
+}
+.txl-cont4
+{
+  font-size: 26rpx;
+  color: #7e7f7e;
+  display: block;line-height: 40rpx;
+}
+.txl-gb{
+  color: red;
+  font-size: 26rpx;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  padding: 0px 0px;
+}
+.txl-kf{
+  color: green;
+  font-size: 26rpx;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  padding: 0px 0px;
+}

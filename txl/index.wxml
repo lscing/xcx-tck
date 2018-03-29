@@ -1,0 +1,67 @@
+<!--pages/txl/index.wxml-->
+<view class="wxSearch-section">
+  <view class="wxSearch-pancel">
+    <icon type="search" size="17" class='sss'/>
+    <input bindinput="wxSearchInput" bindfocus="wxSerchFocus" value="{{wxSearchData.value}}" bindblur="wxSearchBlur" class="wxSearch-input" placeholder="搜索" />
+  </view>
+</view>
+<view class="flex box box-lr">
+ <!-- <navigator url='../core/index/index' open-type="switchTab">跳转</navigator> -->
+  <scroll-view class="flex txl-cont0 groups box box-tb" scroll-y="true" scroll-into-view="{{scrollIntoView}}">
+    <block wx:for="{{group}}" wx:for-item="group" wx:key="group">
+      <view class="flex txl-cont" id="{{group.name}}">
+        <view class="group-name-top">
+          <view class="group-name">{{group.name}}</view>
+        </view>
+        
+        <view class="flex group-users">
+          <!-- 跳转 -->
+           <view >
+              <view class="user-name-top">
+              <block  wx:for="{{group.user}}" wx:for-item="user"  wx:key="user"  class="user box box-lr" bindlongpress="longUserTap"  >
+                <view class="flex user-name" bindtap="open" data-user="{{user.url}}">
+                  <view class='img-logo'>
+                    <image src='../../img/img6.jpg'></image>
+                  </view>
+                  <view class='txl-cont2'>
+                    <text class='txl-cont3'>{{user.cont}}(1001)</text>
+                    <text class='txl-cont4'>哈撒给</text>
+                  </view>
+                  <block wx:if="{{user.state == 0}}">
+                  <view class='txl-gb'>
+                    关闭
+                  </view>
+                  </block>
+                  <block wx:elif="{{user.state == 1}}">
+                  <view class='txl-kf'>
+                    开放
+                  </view>
+                  </block>
+                </view>
+                <view class='clean'></view>
+              </block>
+              </view>
+
+          </view> 
+          <!-- 弹框 -->
+          <!-- <view wx:for="{{group.user}}" wx:for-item="user"  wx:key="user"  class="user box box-lr" bindtap="open" bindlongpress="longUserTap"data-user="{{user.url}}" >
+              <view class="user-name-top">
+                <view class="flex user-name">{{user.cont}}</view>
+              </view>
+          </view> -->
+        </view>
+        <view class="group-name-foot0">
+          <view class="group-name-foot"></view>
+        </view>
+        
+
+      </view>
+    </block>
+  </scroll-view>
+
+   <view class="nav box box-tb" bindtouchmove="touchmove" bindtouchcancel="touchcancel" bindtouchend="touchend">
+    <view bindtap="tabLetter" data-index="{{item}}" wx:for="{{letters}}" wx:key="item" class="flex box box-align-center box-pack-center letter">
+      <text class="letter-text {{selected == item ? 'letter-actived' : ''}}">{{item}}</text>
+    </view>
+  </view>  
+</view>
