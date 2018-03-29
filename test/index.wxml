@@ -1,0 +1,39 @@
+<!--pages/test/index.wxml-->
+<view class='top'>
+  <view class='top-cont'>
+  <block wx:for="{{tabs}}" wx:key="*this">
+    <view bindtap="tabClick" id="{{index}}" class="top-contf {{activeIndex == index ? 'top-contf-active' : ''}} ">{{item}}</view>
+    </block>
+  </view>
+</view>
+
+<view class='qh-cont'>
+    <view class="" hidden="{{activeIndex != 0}}">
+    <block wx:for="{{ds}}" wx:key="sss">
+      <view class='cont'>
+        <view  class='contf'>马克思(10)</view>
+        <image  bindtap="tabClickQxup" data-hef='{{showView}}' class='contr' src='/img/slh.png'></image>
+      </view>
+      </block>
+    </view>
+    <view class="" hidden="{{activeIndex != 1}}">
+      222
+    </view>
+</view>
+
+<!-- 弹出框 -->
+<view class="zz {{showView?'tck-show':'tck-hide'}}"bindtap="tabClickQxdown"data-hef='{{showView}}' >
+<view class="tck {{downAni?'down':'up'}}">
+  <view  class='tck-top'>写不完的温柔</view>
+  <view class='tck-cont'>
+  <block wx:for="{{grids}}" wx:key="*this">
+    <view class='tck-cont0'>
+      <view><image src='/img/test.png'></image></view>
+      <view class='tck-cont-p'>加入歌单</view>
+    </view>
+  </block>
+  </view>
+  <button class="weui-btn" bindtap="tabClickQxdown"data-hef='{{showView}}' type="default">取消</button>
+  <!-- <view bindtap="tabClickQxdown"data-hef='{{showView}}' class='tck-foot'>取消</view> -->
+</view>
+</view>
