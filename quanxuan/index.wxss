@@ -1,0 +1,40 @@
+/* pages/school/index.wxss */
+page{
+  background: #f2f2f2;
+  height: 100%;
+}
+checkbox-group{
+  background: #fff;
+}
+ checkbox-group .weui-check__label{
+  border-bottom: 1rpx solid #cccccc;
+} 
+.weui-cells:before{border: none}
+.weui-cells:after,.weui-cells:before{content:" ";position:absolute;left:0;right:0;height:0px;color:#d9d9d9}
+.weui-cells:after{border: none}
+.weui-cell{
+  position: static
+  }
+.weui-navbar{
+  background: #ffffff;
+  color: #000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.weui-navbar__item.weui-bar__item_on{
+  color: #4FA647;
+}
+.weui-navbar__slider{
+  background-color: #4FA647;
+}
+.page__bd{
+    padding-bottom: 0;
+}
+.weui-tab__content{
+    padding-top: 60px;
+    text-align: center;
+}
+.weui-cell__bd{
+  font-size: 30rpx;
+}

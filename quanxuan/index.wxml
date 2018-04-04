@@ -1,0 +1,50 @@
+<!--pages/school/index.wxml-->
+<view class='allbody'>
+
+
+<view class="weui-navbar">
+    <block wx:for="{{tabs}}" wx:key="*this">
+        <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+            <view class="weui-navbar__title">{{item}}</view>
+        </view>
+    </block>
+    <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+</view>
+<view class="weui-tab__panel">
+    <!-- 选项卡内容二 -->
+    <view class="" hidden="{{activeIndex != 0}}">
+          <checkbox-group bindchange="checkboxChangeqx">
+                <label class="weui-cell weui-check__label" >
+                    <checkbox class="weui-check" value="0" checked="{{selectedAllStatus}}"/>
+
+                    <view class="weui-cell__hd weui-check__hd_in-checkbox">
+                        <icon class="weui-icon-checkbox_circle" type="circle" size="23" wx:if="{{!selectedAllStatus}}"></icon>
+                        <icon class="weui-icon-checkbox_success" type="success" size="23" wx:if="{{selectedAllStatus}}"></icon>
+                    </view>
+                    <view class="weui-cell__bd">全选</view>
+                </label>
+            </checkbox-group>
+           <checkbox-group bindchange="checkboxChange">
+                <label class="weui-cell weui-check__label" wx:for="{{checkboxItems}}" wx:key="value">
+                    <checkbox class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
+
+                    <view class="weui-cell__hd weui-check__hd_in-checkbox">
+                        <icon class="weui-icon-checkbox_circle" type="circle" size="23" wx:if="{{!item.checked}}"></icon>
+                        <icon class="weui-icon-checkbox_success" type="success" size="23" wx:if="{{item.checked}}"></icon>
+                    </view>
+                    <view class="weui-cell__bd">{{item.name}}</view>
+                </label>
+            </checkbox-group>
+    </view>
+    <view class="" hidden="{{activeIndex != 1}}">
+    
+      222222
+    
+    </view>
+    <view class="" hidden="{{activeIndex != 2}}">
+    
+      3333
+    
+    </view>
+</view>
+</view>
