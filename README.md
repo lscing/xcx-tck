@@ -5,4 +5,4 @@ git上面留两个空格相当于换行
 其中还有个选项卡  
 # txl目录下  
 做了个类似于手机通讯录的列表功能  
-![image](https://github.com/lscing/xcx-tck/blob/master/quanxuan.jpg)
+![image](https://github.com/lscing/xcx-tck/blob/master/quanxuan.jpg =100x200)
