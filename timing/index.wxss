@@ -1,0 +1,122 @@
+/* pages/sign/timing/index.wxss */
+page{
+  background: #f2f2f2;
+}
+switch {
+  z-index: -999
+}
+.head{
+  display: flex;
+  flex-direction: row;
+  padding: 20rpx 0rpx;
+  background: #ffffff;
+  border-bottom: 1rpx solid #d6d6d6;
+  align-items: center;
+  /* position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%; */
+}
+.head-add{
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 30rpx;
+}
+.head-right{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 30rpx;
+}
+.head-center{
+  flex: 1;
+  font-size: 34rpx;
+  margin-left: 20rpx;
+  color: #000000;
+}
+
+.body{
+  /* padding-top:85rpx ; */
+}
+.body-ul{
+    margin: 20rpx;
+    border-radius: 2px;
+    background-color: #fff;
+    background-clip: padding-box;
+    box-shadow: 0 1px 2px rgba(0,0,0,.3);
+
+}
+.body-ul-top{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20rpx;
+  border-bottom: 1rpx solid #c8c7cc;
+}
+.body-ul-top-fz{
+  flex: 1;
+  font-size: 32rpx;
+  color: #000000;
+}
+.body-ul-top-right-bd{
+  width: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.body-ul-top-right{
+  width: 36rpx;
+  height: 36rpx;
+}
+.body-ul-cont{
+  padding: 20rpx;
+  border-bottom: 1rpx solid #c8c7cc;
+}
+.body-ul-cont1{
+  display: flex;
+  justify-content: row;
+  margin: 15rpx 0;
+}
+.body-ul-cont1f{
+  color: #000000;
+  font-size: 29rpx;
+  margin-right: 20rpx;
+  word-spacing: 2em;
+}
+.body-ul-cont1r{
+  flex: 1;
+  font-size: 29rpx;
+
+}
+.body-ul-cont1r-ss{
+  float: right;
+  color: blue
+}
+.flod{
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  align-content: center;
+}
+.extend{
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  align-content: center;
+}
+.body-ul-foot{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding:10rpx 20rpx;
+}
+.body-ul-foot-fz{
+  flex: 1;
+  font-size: 28rpx;
+  color: #aaa;
+}

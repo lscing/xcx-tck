@@ -1,0 +1,61 @@
+<!--pages/sign/timing/index.wxml-->
+<view class='head'  bindtap="addTiming">
+  <image class='head-add' src='/img/address/jia.png'></image>
+  <view class='head-center'>
+    添加定时签到
+  </view>
+  <image class='head-right' src='/img/address/right.png'></image>
+</view>
+<!-- body begin -->
+<view class='body'>
+<block wx:for="{{leaveData}}" wx:key="sss">
+  <view class='body-ul'>
+      <view class='body-ul-top'>
+        <text class='body-ul-top-fz'>测试</text>
+        <view class='body-ul-top-right-bd'>
+          <image class='body-ul-top-right' src='/img/sign/del.png'></image>
+        </view>
+      </view>
+      <!-- body-ul-cont begin -->
+      <view class='body-ul-cont'>
+          <view class='body-ul-cont1'>
+            <view class='body-ul-cont1f'>内 容:</view>
+             <view class='body-ul-cont1r'>
+              <view class="{{item.isFold ?'flod':'extend' }}" data-id='{{item.id}}' bindtap="flodFn" id='{{item.id}}'>
+                  {{item.content}}
+              </view>
+            </view>
+            
+            
+          </view>
+          <view class='body-ul-cont1'>
+            <view class='body-ul-cont1f'>班 级:</view>
+            <view class='body-ul-cont1r'>
+              测试团队(1)
+            </view>
+          </view>
+          <view class='body-ul-cont1'>
+            <view class='body-ul-cont1f'>地 点:</view>
+            <view class='body-ul-cont1r'>
+              现场签到(101)
+            </view>
+          </view>
+          <view class='body-ul-cont1'>
+            <view class='body-ul-cont1f'>时 间:</view>
+            <view class='body-ul-cont1r'>
+              每{{lis}}的10:50发布签到,签到时间:10:51-10:52
+            </view>
+          </view>
+      </view>
+      <!-- body-ul-cont end -->
+      <view class='body-ul-foot '>
+        <text class='body-ul-foot-fz'>已发布5次</text>
+        <view class=''>
+         <switch checked bindchange="switch1Change"/>
+        </view>
+      </view>
+
+  </view>
+  </block>
+</view>
+<!-- body end -->
