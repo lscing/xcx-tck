@@ -17,4 +17,10 @@ git上面留两个空格相当于换行
     </view>  
               
 主要这行代码，功能室点击内容区域实现的收缩  
+# timingWxDom目录下  
+通过var query = wx.createSelectorQuery()实现微信DOM操作  
+
+目前测试出来的是一切效果android都好着，但是ios不支持这里的处理，所以ios不显示所谓的全部文字  
+
+
 
