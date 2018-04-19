@@ -12,9 +12,9 @@ git上面留两个空格相当于换行
 <img src="https://github.com/lscing/xcx-tck/blob/master/img/quanxuan.jpg" width = "375" height = "667" alt="图片名称" align=center />
 # timing目录下  
 
-<view class="{{item.isFold ?'flod':'extend' }}" data-id='{{item.id}}' bindtap="flodFn" >
-                  {{item.content}}
-              </view>  
+    <view class="{{item.isFold ?'flod':'extend' }}" data-id='{{item.id}}' bindtap="flodFn" >
+    {{item.content}}
+</view>  
               
 主要这行代码，功能室点击内容区域实现的收缩  
 
